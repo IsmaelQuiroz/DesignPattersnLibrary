@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DesignPatterns.Exercise01_PatronRepository
+namespace DesignPatterns.E01_RepositoryPattern
 {
     /*  1. El objetivo del ejercicio es implementar el patron repositorio 
      *  para evaluar si una fecha especifica esta entre un rango de inicio y un rango final.
