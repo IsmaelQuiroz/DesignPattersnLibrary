@@ -49,7 +49,7 @@ namespace DesignPatterns.E02_ISpecificationPattern
         //}
 
         //Busca por nombre 
-                public IEnumerable<Evento> FindByName(ISpecificationNombre<Evento> spec)
+        public IEnumerable<Evento> FindByName(ISpecificationNombre<Evento> spec)
         {
             return listaDeEventos.Where(evento => spec.IsValidName(evento));
         }
