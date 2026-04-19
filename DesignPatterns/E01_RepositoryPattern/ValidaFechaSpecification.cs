@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Exercise01_PatronRepository
+namespace DesignPatterns.E01_RepositoryPattern
 {
     public class ValidaFechaSpecification : ISpecification<DateTime>
     {
