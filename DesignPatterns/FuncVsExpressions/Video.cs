@@ -19,10 +19,15 @@ namespace DesignPatterns.FuncVsExpressions
                 new Video { Nombre = "avatar"}
             };
 
+           
+            Func<Video, bool> condition = x => x.Nombre.Contains("m"); // == "matrix";
             Func<Video, string> selector = (video) => "Pelicula:" + video.Nombre;
 
-            IEnumerable<string> videoTitulos = videos.Select(selector);
-            foreach(string titulos in videoTitulos)
+
+            IEnumerable<Video> videosFiltered = videos.Where(condition);  //videos.Where(x => x.Nombre == "matrix").Select(selector);
+            IEnumerable<string> videosTitulosFiltrados = videosFiltered.Select(selector);
+
+            foreach(string titulos in videosTitulosFiltrados)
             {
                 Console.WriteLine(titulos);
             }
